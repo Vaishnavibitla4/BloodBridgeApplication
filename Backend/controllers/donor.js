@@ -29,7 +29,7 @@ const updateDonor = async (req, res) => {
             {$set: req.body},
             {new: true}
         );
-        res.status(200).json(updateDonor);
+        res.status(200).json(donor);
     }catch(error){
         res.status(500).json(error);
     }
